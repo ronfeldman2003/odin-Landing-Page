@@ -11,6 +11,7 @@ a {
     /* this removes the line under our links */
     text-decoration: none;
     color: gray;
+    font-size: 18px;
 }
 
 ul {
@@ -70,10 +71,11 @@ ul {
     font-weight: 900;
 }
 .about-sub-title{
-    font-size: 20px;
+    font-size: 18px;
 }
 .image{
     border: 2px solid gray;
+    background-color: gray;
     width: 500px;
     height: 100%;
     display: flex;
@@ -83,17 +85,53 @@ ul {
 .random-info{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.random-text{
+    font-size: 36px;
+    font-weight: 800;
 }
 .box{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
+    width: 100%;
+    aspect-ratio:1;
+    border: 3px solid  #3882f6;
+    border-radius: 10px;
 }
 .cards{
     display: flex;
+    justify-content: space-between;
+    gap:50px
+}
+.card-text{
+    font-size: 20px;
+    text-align: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    
 }
 .quote{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    height: 300px;
+    
+    
+}
+.quote-text{
+    font-size: 36px;
+    width: 60%;
+}
+.author{
+    font-size: 30px;
+    font-weight: 800;
+    width: 60%;
+    text-align: right;
 }
 .signup{
     display: flex;
@@ -101,4 +139,33 @@ ul {
 .footer{
     display: flex;
     justify-content: center;
+    background-color: aliceblue;
+}
+
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-box{
+    background-color: #3882f6;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 50%;
+}
+.signup-text{
+    font-size: 34px;
+    color: #f9faf8;
+}
+.signup button {
+    width: 100px;
+
+    color: #f9faf8;
+    font-size: 25px;
+    border: 2px solid #f9faf8;
+    background-color: #3882f6;
+    border-radius: 10px;
 }
